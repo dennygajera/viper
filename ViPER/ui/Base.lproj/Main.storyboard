@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WtE-UO-odI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DashboardVC-->
+        <scene sceneID="KIp-db-Wgo">
+            <objects>
+                <viewController storyboardIdentifier="DashboardVC" id="WtE-UO-odI" customClass="DashboardVC" customModule="ViPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="chr-9D-1lj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Q4B-tP-PTP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WtE-UO-odI" id="yqU-fj-vVp"/>
+                                    <outlet property="delegate" destination="WtE-UO-odI" id="pWL-Hh-E8d"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xXG-61-fcx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q4B-tP-PTP" firstAttribute="leading" secondItem="xXG-61-fcx" secondAttribute="leading" id="S6a-5M-6RP"/>
+                            <constraint firstItem="Q4B-tP-PTP" firstAttribute="top" secondItem="xXG-61-fcx" secondAttribute="top" id="YWl-TW-v4k"/>
+                            <constraint firstItem="xXG-61-fcx" firstAttribute="trailing" secondItem="Q4B-tP-PTP" secondAttribute="trailing" id="hLu-4M-8b5"/>
+                            <constraint firstItem="xXG-61-fcx" firstAttribute="bottom" secondItem="Q4B-tP-PTP" secondAttribute="bottom" id="qLS-fa-q37"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MfA-93-fYj"/>
+                    <connections>
+                        <outlet property="tblView" destination="Q4B-tP-PTP" id="cm7-hX-03m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k08-Gp-6Ic" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030.4347826086957" y="152.00892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
